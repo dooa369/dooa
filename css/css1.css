@@ -1,0 +1,51 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(#5CC9E6, #07588F);
+}
+
+header{
+    width: 100%;
+    height: 15%;
+}
+
+nav{
+    width: 15%;
+    height: 70%;
+    float: left;
+}
+
+section{
+    width: 70%;
+    height: 70%;
+    float: left;
+}
+
+aside{
+    width: 15%;
+    height: 70%;
+    float: left;
+}
+
+footer{
+    width: 100%;
+    height: 15%;
+    clear: both;
+}
+
+body{
+    font-family: 'Giants-Inline';
+}
+
+table {
+    position:relative;
+    top: -45%;
+    left: 91%;
+    bottom: 50%;
+}
+
+a {
+    text-decoration-line: none;
+    color: #000;
+}
