@@ -9,7 +9,6 @@ html {
     display: grid;
     justify-items: center;
     align-items: center;
-    background: linear-gradient(#5CC9E6, #07588F);
   }
   
   #main-holder {

@@ -10,10 +10,12 @@
             background-image: url(img/wrtFileImageView.jpg);
             background-size: cover;}
         .search-bar {width: 650px;}
-        div,img {position:relative}
-        p {position: absolute; top: 533px; left: 34.7%;}
-        div { height: 15%;top: 210px;}
-        img {top: 215px; left: 35%;}
+        div,img,input {position:relative}
+        p {position: absolute; top: 533px; left: 48.3%;}
+        div { height: 15%;top: 280px;}
+        img {top: 215px; left: 48.55%;}
+        input {height: 5000px;}
+        .rjator {position:relative; height: 50%;}
     </style>
 </head>
 <body>
@@ -44,16 +46,12 @@
         clock();
         setInterval(clock, 1000); // 1초마다 실행
     </script>
-
 <form action="https://www.google.com/search" method="GET">
-    <div class="mx-auto mt-5 search-bar input-group mb-3">
-      <input name="q" type="text" class="form-control rounded-pill" placeholder="Google 검색 또는 URL 입력" aria-label="Recipient's username" aria-describedby="button-addon2">
-      <div class="input-group-append">
-      </div>
+    <div id="rjator" class="mx-auto mt-5 search-bar input-group mb-3">
+    <a href="https://dooa369.github.io/dooa/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80.html"><input name="q" type="text" size="100 " class="form-control rounded-pill" placeholder="https://dooa369.github.io/dooa/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%80.html" aria-label="Recipient's username" aria-describedby="button-addon2"></a>
+    <div class="input-group-append">
     </div>
-  </form>
-    <a href="홈페이지.html">
-        <img src="img/로고1.jpg " alt="">
-    </a><br><p>젠틀 옷장</p>
+    </div>
+</form>
 </body>
 </html>
