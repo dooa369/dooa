@@ -155,7 +155,7 @@ function signUpCheck(){
     //비동기 처리이벤트
     setTimeout(function() {
       alert("가입이 완료되었습니다.")
-      location.href ="/로그인 된 홈페이지.html";
+      location.href ="https://dooa369.github.io/dooa/%EB%A1%9C%EA%B7%B8%EC%9D%B8.html";
   },0);
   }
 }
