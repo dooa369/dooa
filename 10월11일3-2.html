@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;}
+        div div{
+            display: inline-block;
+            height: 50px;
+            width: 50px;
+            border: inline-block;
+            text-align: center;
+            color: white;
+            background: red;
+        }
+        #dowm:hover {
+            position: relative;
+            left: 20px;
+            top: 20px;
+            background: green;
+            cursor: progress;
+        }
+        #up:hover {
+            position: relative;
+            right: 20px;
+            bottom: 20px;
+            background: green;
+            cursor: progress;
+        }
+    </style>
+</head>
+<body>
+    <h3>상대 배치</h3>
+    h와 k 글자에 마우스를 올려 보세요
+    <hr>
+    <div>
+        <div>T</div>
+        <div id="dowm">h</div>
+        <div>a</div>
+        <div>n</div>
+        <div id="up">k</div>
+        <div>s</div>
+    </div>
+</body>
+</html>
