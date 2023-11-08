@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>내가 좋아하는 음식</h3>
+    <hr>
+    <p>내가 좋아하는 음식을 선택 하세요.</p>
+<select id="mySelect" onchange="myFunction()">
+    <option value="선택 하세요">선택 하세요</option>
+  <option value="짜장면">짜장면</option>
+  <option value="짬뽕">짬뽕</option>
+  <option value="탕수육">탕수육</option>
+</select>
+<p id="demo"></p>
+<p id="do"></p>
+<script>
+    function myFunction() {
+      var x = document.getElementById("mySelect").value;
+      var i = document.getElementById("do");
+      document.getElementById("demo").innerHTML = "내가 선택한 음식은 :" + x;
+    if(x=='짜장면')
+        i.innerHTML="<img src=img/369.jfif>";
+    else if(x=='짬뽕')
+        i.innerHTML="<img src=img/258.jfif>";
+    else
+    i.innerHTML="<img src=img/147.jfif>";
+    }
+    </script>
+</body>
+</html>
