@@ -37,7 +37,7 @@ body{
     font-family: 'Giants-Inline';
 }
 
-table {
+#ta {
     position:relative;
     top: -45%;
     left: 91%;
@@ -97,3 +97,17 @@ a {
     width: 300px;
 }
 
+#td1 {
+    
+    width: 750px;
+}
+
+#td2 {
+    width: 50%;
+    font-size: 25px;
+}
+
+#rjx {
+    position:relative;
+    left: 25%;
+}
