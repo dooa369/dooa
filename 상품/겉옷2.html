@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <link rel="stylesheet" href="css/css1.css">
 </head>
 <body>
+    <div data-ng-app="" data-ng-init="quantity=1;price=15000"></div>
     <header>
     <a href="/홈페이지0.html">
         <img src="/img/img/제목.png" alt="">
@@ -20,5 +22,26 @@
         </tr><br>
     </table>
 </header>
+<nav>
+    <ul id="topMenu">
+        <li><a class="menuLink" href="상의.html">상의</a></li>
+        <li><a class="menuLink" href="하의.html">하의</a></li>
+        <li><a class="menuLink" href="겉옷.html">겉옷</a></li>
+        <li><a class="menuLink" href="신발.html">신발</a></li>
+        <li><a class="menuLink" href="팔찌.html">팔찌</a></li>
+        <li><a class="menuLink" href="모자.html">모자</a></li>
+    </ul>
+</nav>
+<section>
+    <table border="1">
+        <tr>
+            <td id="td1"><img id="rjx" src="img/111.jfif" alt=""></td>
+            <td id="td2">Quantity: <input type="number" ng-model="quantity">
+                Price: <input type="number" ng-model="price">
+                
+                <p><b>Total in dollar:</b> {{quantity * price}}</p></td>
+        </tr>
+    </table>
+</section>
 </body>
 </html>

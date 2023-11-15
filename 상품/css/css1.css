@@ -111,3 +111,7 @@ a {
     position:relative;
     left: 25%;
 }
+
+#basic-addon1, #basic-addon3{
+    width: 15%;
+}
