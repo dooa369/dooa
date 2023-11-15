@@ -80,6 +80,11 @@ a {
     float: left;
 }
 
+.a img{
+    height: 335px;
+    width: 330px;
+}
+
 .b img{
     height: 335px;
     width: 300px;
@@ -88,7 +93,13 @@ a {
 
 .c img{
     height: 335px;
-    width: 280px;
+    width: 350px;
+}
+
+.d img{
+    height: 335px;
+    width: 330px;
+
 }
 
 .e img{
@@ -97,3 +108,8 @@ a {
     width: 300px;
 }
 
+.f img{
+    height: 335px;
+    width: 330px;
+
+}
