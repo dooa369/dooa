@@ -1,0 +1,100 @@
+//내가만든코드//
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <title>스파르타코딩클럽 | 1주차 숙제</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        .wrap{
+            width: 600px;
+            margin:auto;
+        }
+        h3{
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        .price{
+            font-weight: normal;
+            font-size: 16px;
+            margin: 6px;
+        }
+        .orderBtn{
+            width:100px;
+            margin: 16px auto;
+        }
+
+    </style>
+    <script>
+        function order(){
+            alert("주문이 완료되었습니다.")
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="productImg">
+        <img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FOgiXX%2FbtrigBIVXat%2FHBaDydAK3PuoMxDkElzBr1%2Fimg.png" alt="My Image">
+    </div>
+    <h3>부릉부릉 어피치<span class="price">가격 : 00000원 / 개</span></h3>
+    <p>이 상품으로 말할 것 같으면 용왕이 찾지 못한 토끼의 간을 찾아 빨간망토의 늑대와 아기돼지 삼형제의 숨결이 고루 녹아 120세까지 살 수 있는 어피치다.</p>
+    <div class="orderInfo">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+          </div>
+          <input type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01">수량</label>
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>수량을 선택하세요</option>
+            <option value="1">1개</option>
+            <option value="2">2개</option>
+            <option value="3">3개</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon3">주소</span>
+          </div>
+          <input type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon4">전화번호</span>
+          </div>
+          <input type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default">
+        </div>
+    </div>
+    <div class="orderBtn">
+        <button type="button" class="btn btn-primary" onclick="order()">주문하기</button>
+    </div>
+
+</div>
+
+</body>
+
+</html>
+출처: https://nossodia.tistory.com/175 [소소한 성장일기:티스토리]
