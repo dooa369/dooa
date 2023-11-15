@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <title>홈 화면</title>
+    <style>
+        html, body {margin: 0; padding: 0; height: 100%;
+            background-image: url(img/wrtFileImageView.jpg);
+            background-size: cover;}
+        .search-bar {width: 650px;}
+        div,img{position:relative}
+        p {position: absolute; top: 533px; left: 48.3%;}
+        img {top: 215px; left: 48.55%;}
+        div {top: 250px;}
+        span {position:relative; top: 50px;}
+        #a {text-decoration-line: none;}
+        .form-control:hover {cursor : pointer;}
+    </style>
+</head>
+<body><h1><a href="index1.html" id="a">수업내용</a>
+    <div style="text-align: center;" id="tlrks">
+        <span id="clock" style="color:gray; font-size: 100px;">clock</span>
+        <span id="apm" style="color:gray; font-size: 50px;"  >ampm</span>
+    </div>
+    
+    <script win>
+        var Target = document.getElementById("clock");
+        var Target_apm = document.getElementById("apm");
+        function clock() {
+            var time = new Date();
+            var hours = time.getHours();
+            var minutes = time.getMinutes();
+            var seconds = time.getSeconds();
+            var AmPm ="AM";
+            if(hours > 12){   
+                var AmPm ="PM";
+                hours %= 12;
+            }
+
+            Target.innerText = 
+            `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+
+            Target_apm.innerText = `${AmPm}`;
+        }
+        clock();
+        setInterval(clock, 1000); // 1초마다 실행
+    </script>
+<form action="https://www.google.com/search" method="GET">
+    <div id="rjator" class="mx-auto mt-5 search-bar input-group mb-3">
+    <a href="홈페이지0.html"><input name="q" type="text" size="100 " class="form-control rounded-pill" placeholder="젠틀 옷장" aria-label="Recipient's username" aria-describedby="button-addon2"></a>
+    <div class="input-group-append">
+    </div>
+    </div>
+</form>
+</body>
+</html>
