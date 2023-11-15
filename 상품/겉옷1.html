@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/css1.css">
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<th:block layout:fragment="css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        .wrap{
+            width: 600px;
+            margin:auto;
+        }
+        h3{
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        .price{
+            font-weight: normal;
+            font-size: 16px;
+            margin: 6px;
+        }
+        .orderBtn{
+            width:100px;
+            margin: 16px auto;
+        }
+
+        .mgb-15{
+            margin-bottom:15px;
+        }
+        .mgt-30{
+            margin-top:30px;
+        }
+        .mgt-50{
+            margin-top:50px;
+        }
+        .repImgDiv{
+            margin-right:15px;
+            height:auto;
+            width:50%;
+        }
+        .wd50{
+            height:auto;
+            width:50%;
+        }
+    </style>
+    <script>
+        function order(){
+            alert("주문이 완료되었습니다.")
+        }
+    </script>
+</th:block>
+</head>
+<body>
+    <div data-ng-app="" data-ng-init="quantity=1;price=15000">
+    <header>
+    <a href="홈페이지0.html">
+        <img src="img/제목.png" alt="">
+    </a>
+    <table id="ta">
+        <tr>
+            <td><a href="로그인.html">로그인</a></td>
+            <td>/</td>
+            <td><a href="회원가입.html">회원가입</a></td>
+        </tr><br>
+    </table>
+</header>
+<nav>
+    <ul id="topMenu">
+        <li><a class="menuLink" href="상의.html">상의</a></li>
+        <li><a class="menuLink" href="하의.html">하의</a></li>
+        <li><a class="menuLink" href="겉옷.html">겉옷</a></li>
+        <li><a class="menuLink" href="신발.html">신발</a></li>
+        <li><a class="menuLink" href="팔찌.html">팔찌</a></li>
+        <li><a class="menuLink" href="모자.html">모자</a></li>
+    </ul>
+</nav>
+<section>
+    <h1>코트</h1>
+    <table border="1">
+        <tr>
+            <td id="td1"><img id="rjx" src="img/111.jfif" alt=""></td>
+            <td id="td2"></div>
+            </span>가격 : 15000 <br>
+                수량 
+                <input type="number" ng-model="quantity">
+                <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+                <input type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default">
+                <span class="input-group-text" id="basic-addon3">주소</span>
+                <input type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default">
+                <p><b>결제 금액 :</b> {{quantity * price}}</p>
+            <div th:if="${item.itemSellStatus.toString().equals('SELL')}" class="text-right">
+                <button type="button" class="btn btn-primary" onclick="order()">
+                    주문하기
+                </button>
+            </div>
+            
+        </td>
+        </tr>
+    </table>
+</section>
+</div>
+</div>
+<aside>aside</aside>
+<footer>footer</footer>
+</body>
+</html>
