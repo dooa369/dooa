@@ -37,6 +37,17 @@ body{
     font-family: 'Giants-Inline';
 }
 
+#tr1 {
+    position:relative;
+    top: -65px;
+}
+
+#tr2 {
+    position:relative;
+    left: 1747.3px;
+    top: -65px;
+}
+
 #ta {
     position:relative;
     top: -45%;
@@ -81,20 +92,12 @@ a {
 }
 
 .b img{
-    height: 335px;
-    width: 300px;
     margin: 0px 150px 0px 150px;
 }
 
-.c img{
-    height: 335px;
-    width: 280px;
-}
 
 .e img{
     margin: 0px 150px 0px 150px;
-    height: 300px;
-    width: 300px;
 }
 
 #td1 {
@@ -114,4 +117,34 @@ a {
 
 #basic-addon1, #basic-addon3{
     width: 15%;
+}
+
+.p{
+    width: 340px;
+    height: 450px;
+}
+
+.o {
+    width: 340px;
+    height: 340px;
+}
+
+.i {
+    width: 340px;
+    height: 360px;
+}
+
+.u {
+    width: 340px;
+    height: 340px;
+}
+
+.y {
+    width: 340px;
+    height: 340px;
+}
+
+.t{
+    width: 340px;
+    height: 450px;
 }

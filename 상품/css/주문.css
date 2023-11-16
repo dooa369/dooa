@@ -1,0 +1,53 @@
+#in{
+    width: 150px;
+    height: 20px;
+}
+
+#basic-addon3 {
+    position:relative;
+    left: 49px;
+    top: 6px;
+}
+
+#basic-addon1 {
+    position:relative;
+    top: 6px;
+}
+
+#basic-addon4 {
+    position:relative;
+    top: 6px;
+}
+
+#basic-addon5 {
+    position:relative;
+    top: 6px;
+}
+
+#in2 {
+    position:relative;
+    left: 54px;
+}
+#sn1 {
+    position:relative;
+    top: 6px;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    position:relative;
+    left: 550px;
+    top: 40px;
+}
+
+#h1 {
+    position:relative;
+    top: -20px;
+    left: 20px;
+}
+
+#wn {
+    position:relative;
+    top: -20px;
+}
