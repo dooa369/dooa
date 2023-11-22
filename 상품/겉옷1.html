@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="css/css1.css">
     <link rel="stylesheet" href="css/주문.css">
+    <script src="js/js.js"></script>
 <th:block layout:fragment="css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
@@ -47,12 +48,14 @@
     <script>
         function order(){
             alert("주문이 완료되었습니다.")
+            location.href ="겉옷1.html";
         }
     </script>
+
 </th:block>
 </head>
 <body>
-    <div data-ng-app="" data-ng-init="quantity=1;price=15000">
+    <div data-ng-app="" data-ng-init="quantity=1;price=237600">
     <header>
     <a href="https://dooa369.github.io/dooa/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%800.html">
         <img src="img/제목.png" alt="">
@@ -83,11 +86,11 @@
             <td id="td2">
                 <div id="wn">
                 <h1 id="h1">코트</h1>
-            </span>가격 : 15000 <br>
+            </span>가격 : 237,600 <br>
                 <span id="sn1">수량 : </span>
                 <input id="in" type="number" ng-model="quantity"><br>
                 <span class="text-right" id="basic-addon1">주문자 이름 :</span>
-                <input id="in1" style="width: 100px; height: 20px;" type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default"><br>
+                <input id="in1" style="width: 100px; height: 20px;" type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default"><span id="nameError" class="error"></span><br>
 
                 <span class="text-right" id="basic-addon4">전화 번호 :</span>
                 <input id="in3" style="width: 300px; height: 20px;" type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default"><br>
@@ -99,10 +102,18 @@
                 <input id="in4" style="width: 300px; height: 20px;" type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default"><hr>
 
                 <p><b>결제 금액 :</b> {{quantity * price}}</p>
+                <span id="qjxms">
             <div th:if="${item.itemSellStatus.toString().equals('SELL')}" class="text-right">
-                <button type="button" class="btn btn-primary" onclick="order()">
-                    주문하기
-                </button>
+                <title>
+                    Awesome Css3 Hover EFfect - 3D Button Hover Effect - CSS 3D transform animation [Subscribe]
+                s</title>
+              <link rel="stylesheet" type="text/css" href="main.css" />
+            </head>
+            <body>
+                <div class="center">
+                    <a id="size" href="#" onclick="order()"><span data-attr="주문">주문</span><span data-attr="하기">하기</span></a>
+                </div>
+                </span>
             </div>
             </div>
         </td>

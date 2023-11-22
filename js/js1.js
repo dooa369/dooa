@@ -18,7 +18,7 @@ function changePhone3(){
       document.getElementById("sendMessage").setAttribute("style","background-color:yellow;")
       document.getElementById("sendMessage").disabled = false;
     }
-}
+} 
 
 // 문자인증+타이머 부분
 function initButton(){
