@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/css1.css">
+    <link rel="stylesheet" href="css/주문.css">
+<th:block layout:fragment="css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+        .wrap{
+            width: 600px;
+            margin:auto;
+        }
+        .price{
+            font-weight: normal;
+            font-size: 16px;
+            margin: 6px;
+        }
+        .orderBtn{
+            width:100px;
+            margin: 16px auto;
+        }
+
+        .mgb-15{
+            margin-bottom:15px;
+        }
+        .mgt-30{
+            margin-top:30px;
+        }
+        .mgt-50{
+            margin-top:50px;
+        }
+        .repImgDiv{
+            margin-right:15px;
+            height:auto;
+            width:50%;
+        }
+        .wd50{
+            height:auto;
+            width:50%;
+        }
+    </style>
+    <script>
+        function order(){
+            alert("주문이 완료되었습니다.")
+        }
+    </script>
+</th:block>
+</head>
+<body>
+    <div data-ng-app="" data-ng-init="quantity=1;price=95280">
+    <header>
+    <a href="https://dooa369.github.io/dooa/%ED%99%88%ED%8E%98%EC%9D%B4%EC%A7%800.html">
+        <img src="img/제목.png" alt="">
+    </a>
+    <table id="ta">
+        <tr id="tr1">
+            <td><a href="https://dooa369.github.io/dooa/%EB%A1%9C%EA%B7%B8%EC%9D%B8.html">로그인</a></td>
+            <td>/</td>
+            <td><a href="https://dooa369.github.io/dooa/%ED%9A%8C%EC%9B%90%EA%B0%80%EC%9E%85.html">회원가입</a></td>
+        </tr><br>
+    </table>
+</header>
+<nav>
+    <ul id="topMenu">
+        <li><a class="menuLink" href="상의.html">상의</a></li>
+        <li><a class="menuLink" href="하의.html">하의</a></li>
+        <li><a class="menuLink" href="겉옷.html">겉옷</a></li>
+        <li><a class="menuLink" href="신발.html">신발</a></li>
+        <li><a class="menuLink" href="팔찌.html">팔찌</a></li>
+        <li><a class="menuLink" href="모자.html">모자</a></li>
+    </ul>
+</nav>
+<section>
+    <h1 style="color: white;">1</h1>
+    <table border="1">
+        <tr>
+            <td id="td1"><img id="ah2" src="img/222222.jfif" alt=""></td>
+            <td id="td2">
+                <div id="wn">
+                <h1 id="h1">폴로 클래식 로고 버킷 모자 White</h1>
+            </span>가격 : 95,280 <br>
+                <span id="sn1">수량 : </span>
+                <input id="in" type="number" ng-model="quantity"><br>
+                <span class="text-right" id="basic-addon1">주문자 이름 :</span>
+                <input id="in1" style="width: 100px; height: 20px;" type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default"><br>
+
+                <span class="text-right" id="basic-addon4">전화 번호 :</span>
+                <input id="in3" style="width: 300px; height: 20px;" type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default"><br>
+
+                <span class="text-right" id="basic-addon3">주소 :</span>
+                <input id="in2" style="width: 300px; height: 20px;" type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default"><br>
+
+                <span class="text-right" id="basic-addon5">상세 주소 :</span>
+                <input id="in4" style="width: 300px; height: 20px;" type="text" class="form-control" aria-label="default" aria-describedby="inputGroup-sizing-default"><hr>
+
+                <p><b>결제 금액 :</b> {{quantity * price}}</p>
+            <div th:if="${item.itemSellStatus.toString().equals('SELL')}" class="text-right">
+                <button type="button" class="btn btn-primary" onclick="order()">
+                    주문하기
+                </button>
+            </div>
+            </div>
+        </td>
+        </tr>
+    </table>
+</section>
+</div>
+</div>
+<aside>aside</aside>
+<footer>footer</footer>
+</body>
+</html>
