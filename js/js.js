@@ -9,7 +9,7 @@ loginButton.addEventListener("click", (event) => {
 
     if (username === "홍길동" && password === "1234") {
         location.reload();
-        location.href ="로그인 된 홈페이지.html";
+        location.href ="홈페이지0.html";
     } else {
         loginErrorMsg.style.opacity = 1;
     }
